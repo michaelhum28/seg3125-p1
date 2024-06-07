@@ -1,0 +1,73 @@
+.dashboard-bg {
+  background-color: #9370DB;
+}
+
+.title {
+  padding-left: 100px;
+}
+
+.btn-about, .btn-service, .btn-contact {
+  color: black;
+}
+
+.btn-about:hover, .btn-service:hover, .btn-contact:hover {
+  background-color: #DDA0DD;
+}
+
+form {
+  background-color: #add8e6; /* Light blue background */
+  padding: 20px;
+  border: 1px solid black;
+}
+
+form h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  background-color: #87ceeb; /* Light sky blue */
+  color: black;
+  font-weight: bold;
+}
+
+.first-column {
+  margin-left: -30px; /* Adjust the value as needed */
+  
+}
+
+.third-column {
+  margin-right: 30px; /* Adjust the value as needed */
+}
+
+.book-now {
+  margin-bottom: 15px;
+}
+
+.book-now-form {
+  border-radius: 8px; /* Adjust the value as needed */
+}
+
+/* New design section */
+.experts-section {
+  background-color: #6a4c93; /* Example background color */
+  padding: 2rem 3rem;
+  color: white;
+}
+.expert-image {
+  max-width: 25%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col2-image{
+  width: 100%;
+}
