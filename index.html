@@ -14,6 +14,7 @@
             padding: 2rem 0;
             color: white;
         }
+
         .expert-image {
             max-width: 100%;
             height: auto;
@@ -27,6 +28,7 @@
         <div class="d-flex justify-content-between align-items-center">
             <h1 class="m-0 pl-15px">Spectral Care</h1>
             <div>
+                <button class="btn btn-contact mx-2">Join ▼</button>
                 <button class="btn btn-about mx-2">About ▼</button>
                 <button class="btn btn-service mx-2">Service ▼</button>
                 <button class="btn btn-contact mx-2">Contact ▼</button>
@@ -91,11 +93,16 @@
                 <div class="text-center flex-grow-1 center">
                     <img src="https://dotesports.com/wp-content/uploads/2023/04/Gengar-Pokemon-in-an-arena-Weaknesses.jpg" alt="col2 Image" class="col2-image">
                 </div>
+                <div class="second-column-container text-center">
+                    <h4 class="loyalty-title text-center">Register for our loyalty program here</h4>
+                    <a href="loyalty.html" class="btn btn-primary w-100">Join Loyalty Program</a>
+                </div>
             </div>
+            
         </div>
     </div>
 
-    <!-- New Design Section -->
+    <!--EXPERT SECTIOn-->>
     <div class="container-fluid mt-5 experts-section">
         <div class="row">
             <div class="col-12 d-flex justify-content-between align-items-center">
@@ -153,6 +160,10 @@
                 });
             }
         }
+
+        document.getElementById('loyalty-button').addEventListener('click', function() {
+            window.location.href = '/loyalty';
+        });
     </script>
 
 </body>
