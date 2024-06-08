@@ -26,7 +26,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (name && email && service && expert && startDate && endDate) {
             if (new Date(startDate) <= new Date(endDate)) {
+                // Store the form data in localStorage
+                localStorage.setItem('bookingData', JSON.stringify({
+                    name,
+                    email,
+                    service,
+                    expert,
+                    startDate,
+                    endDate
+                }));
+                
                 successMessage.textContent = 'Successfully Registered!';
+                // Redirect to the booking confirmation page after 2 seconds
+                setTimeout(() => {
+                    window.location.href = 'booking-confirmation.html';
+                }, 1000);
             } else {
                 successMessage.textContent = '';
                 alert('Start date cannot be after end date.');

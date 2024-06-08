@@ -158,3 +158,27 @@ button[type="submit"] {
   margin-top: 30px;
   padding: 0 16rem;
 }
+
+.booking-confirmation {
+  background-color: #4B2E83;
+  color: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+.booking-confirmation h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.booking-confirmation p {
+  font-size: 18px;
+  margin-top: 12px;
+  padding-top:10px;
+}
+
+.booking-confirmation-container{
+  background-color: #4B2E83;
+}
