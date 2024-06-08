@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Spectral Care</title>
     <meta charset="utf-8">
@@ -8,21 +7,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="styles.css" rel="stylesheet">
-</head>
 
+    <style>
+        .loyalty-section {
+            padding: 2rem 0;
+            color: #6a4c93;
+        }
+        /* Additional CSS to move content down */
+        body {
+            padding-top: 60px; /* Adjust according to your navbar height */
+        }
+    </style>
+
+</head>
 <body>
 
-    <div class="container-fluid dashboard-bg p-3">
-        <div class="d-flex justify-content-between align-items-center">
-            <h1 class="m-0 pl-15px">Spectral Care</h1>
-            <div>
-                <button class="btn btn-contact mx-2">Join</button>
-                <button class="btn btn-about mx-2">About</button>
-                <button class="btn btn-service mx-2">Service</button>
-                <button class="btn btn-contact mx-2">Contact</button>
-            </div>
-        </div>
-    </div>
+    <!-- Navbar Container -->
+    <div id="navbar"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+
 
     <div class="container mt-5">
         <div class="row">
@@ -86,11 +94,10 @@
                     <a href="loyalty.html" class="btn btn-primary w-100">Join Loyalty Program</a>
                 </div>
             </div>
-            
         </div>
     </div>
 
-    <!--EXPERT SECTIOn-->>
+    <!--EXPERT SECTION-->
     <div class="container-fluid mt-5 experts-section">
         <div class="row">
             <div class="col-12 d-flex justify-content-between align-items-center">
@@ -153,6 +160,54 @@
             window.location.href = '/loyalty';
         });
     </script>
+
+    <!--SERVICES-->
+
+    <div id = "service-start"></div>
+
+    <h1 class = "services-title text-center">This Ghost Pokemon Daycare is your one-stop destination for all services customized for your ghostly friends.</h1>
+    <div class="container-fluid mt-5 service-container">
+        <div class="service-card">
+            <img src="https://archives.bulbagarden.net/media/upload/5/5e/Day_Care_Unova.png" alt="Regular Service">
+            <h2>Regular Service<br>$25/day</h2>
+        <p>Our Regular Service offers comprehensive care and attention for your ghost Pokemon, ensuring they feel comfortable and happy during their stay with us.</p>
+    </div>
+    <div class="service-card">
+        <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/watch-pokemon-tv/seasons/season18/season18_ep24_ss04.jpg" alt="Shiny Service">
+        <h2>Shiny Service (VIP)<br>$40/day</h2>
+        <p>Elevate your ghost Pokemon's experience with our Shiny Service, offering VIP treatment with exclusive perks, personalized attention, and extra pampering to make their stay truly special.</p>
+    </div>
+    <div class="service-card">
+        <img src="https://archives.bulbagarden.net/media/upload/2/2d/SM094.png" alt="Legendary Service">
+        <h2>Legendary Service (VVIP)<br>$70/day</h2>
+        <p>Experience ultimate luxury with our Legendary Service for your ghost Pokemon. Enjoy VVIP treatment, deluxe accommodations, and tailored experiences meeting their every need and desire.</p>
+    </div>
+</div>
+
+<div class="container-fluid mt-5 contact-section">
+    <div class="row">
+        <div class="col">
+            <h2>Contact Us</h2>
+            <div class = "contact-info"><strong>Address:</strong> 75 Laurier Ave E, Ottawa, ON K1N 6N5</div>
+            <div class = "contact-info"><strong>Phone Number:</strong> (613) 562-5700</div>
+            <div><strong>Opening Hours:</strong></div>
+            <table>
+                <tr>
+                    <td>Weekdays:</td>
+                    <td>7:00am - 10:00pm</td>
+                </tr>
+                <tr>
+                    <td>Weekends:</td>
+                    <td>9:00am - 8:00pm</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id = "contact-start"></div>
+</div>
+
+
+
 
 </body>
 

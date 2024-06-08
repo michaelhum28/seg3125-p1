@@ -13,28 +13,28 @@
             padding: 2rem 0;
             color: #6a4c93;
         }
+        /* Additional CSS to move content down */
+        body {
+            padding-top: 60px; /* Adjust according to your navbar height */
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="container-fluid dashboard-bg p-3">
-        <div class="d-flex justify-content-between align-items-center">
-            <h1 class="m-0 pl-15px">Spectral Care</h1>
-            <div>
-                <a href="index.html" class="btn btn-contact mx-2">Home</a>
-                <a href="about.html" class="btn btn-about mx-2">About</a>
-                <a href="services.html" class="btn btn-service mx-2">Services</a>
-                <a href="contact.html" class="btn btn-contact mx-2">Contact</a>
-            </div>
-        </div>
-    </div>
+    <!-- Navbar Container -->
+    <div id="navbar"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
 
     <div class="container loyalty-section">
         <h2 class="text-center">Loyalty Program</h2>
         <p>Welcome to our loyalty program. Here you can register and take advantage of our exclusive offers and rewards.</p>
         <!-- Add more content about the loyalty program here -->
-        <form>
+        <form class="loyalty-container">
             <!-- Add form fields for loyalty program registration -->
             <div class="mb-3">
                 <label for="loyalty-name" class="form-label">Name</label>

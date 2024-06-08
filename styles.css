@@ -2,15 +2,23 @@
   background-color: #9370DB;
 }
 
+.navbar {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
 .title {
   padding-left: 100px;
 }
 
-.btn-about, .btn-service, .btn-contact {
+.btn-about, .btn-services, .btn-contact, .btn-join {
   color: black;
 }
 
-.btn-about:hover, .btn-service:hover, .btn-contact:hover {
+.btn-about:hover, .btn-services:hover, .btn-contact:hover, .btn-join:hover {
   background-color: #DDA0DD;
 }
 
@@ -70,7 +78,7 @@ button[type="submit"] {
 .col2-image {
   width: 95.5%;
 }
-  
+
 .btn-primary {
   background-color: #87ceeb;
   color: black;
@@ -83,4 +91,66 @@ button[type="submit"] {
 
 .loyalty-title{
   padding: 0.5rem 0;
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-around;
+  width: 98%;
+  max-width: 1420px;
+  
+}
+
+.service-card {
+  background-color: #d3eaff;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.service-card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.service-card h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-top: 20px;
+}
+
+.service-card p {
+  font-size: 1em;
+  color: #555;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+.loyalty-container{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.contact-section {
+  background-color: #6a4c93; /* Example background color */
+  padding: 2rem 3rem;
+  color: white;
+}
+
+.contact-info{
+  margin-bottom: 4px;
+}
+
+.services-title{
+  margin-top: 30px;
+  padding: 0 16rem;
 }
