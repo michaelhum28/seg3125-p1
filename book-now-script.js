@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const emailInput = document.getElementById('email');
     const serviceInput = document.getElementById('service');
     const expertInput = document.getElementById('expert');
-    const dateInput = document.getElementById('date');
-    const timeInput = document.getElementById('time');
+    const startDateInput = document.getElementById('start-date');
+    const endDateInput = document.getElementById('end-date');
     const submitButton = form.querySelector('button[type="submit"]');
 
     // Create a span element to display the success message
@@ -21,11 +21,16 @@ document.addEventListener("DOMContentLoaded", function() {
         const email = emailInput.value.trim();
         const service = serviceInput.value.trim();
         const expert = expertInput.value.trim();
-        const date = dateInput.value.trim();
-        const time = timeInput.value.trim();
+        const startDate = startDateInput.value.trim();
+        const endDate = endDateInput.value.trim();
 
-        if (name && email && service && expert && date && time) {
-            successMessage.textContent = 'Successfully Registered!';
+        if (name && email && service && expert && startDate && endDate) {
+            if (new Date(startDate) <= new Date(endDate)) {
+                successMessage.textContent = 'Successfully Registered!';
+            } else {
+                successMessage.textContent = '';
+                alert('Start date cannot be after end date.');
+            }
         } else {
             successMessage.textContent = '';
             alert('Please fill out all fields.');
