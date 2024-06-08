@@ -30,8 +30,6 @@
             .then(data => document.getElementById('navbar').innerHTML = data);
     </script>
 
-
-
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6 first-column">
@@ -77,7 +75,7 @@
                     <div class="row mb-3">
                         <label for="time" class="col-sm-3 col-form-label">Time:</label>
                         <div class="col-sm-9">
-                            <input type="time" class="form-control" id="time"> <!-- Step set to 5 minutes (300 seconds) -->
+                            <input type="time" class="form-control" id="time"> <!-- Step set to 1 second maybe 15 mins later? -->
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Complete</button>
@@ -120,6 +118,8 @@
             </div>
         </div>
     </div>
+
+    <script src="book-now-script.js"></script> <!-- Link to the external JS file -->
 
     <script>
         const expertsByService = {
@@ -168,45 +168,40 @@
         <div class="service-card">
             <img src="images/unova-daycare.png" alt="Regular Service">
             <h2>Regular Service<br>$25/day</h2>
-        <p>Our Regular Service offers comprehensive care and attention for your ghost Pokemon, ensuring they feel comfortable and happy during their stay with us.</p>
-    </div>
-    <div class="service-card">
-        <img src="images/ghost-house.jpg" alt="Shiny Service">
-        <h2>Shiny Service (VIP)<br>$40/day</h2>
-        <p>Elevate your ghost Pokemon's experience with our Shiny Service, offering VIP treatment with exclusive perks, personalized attention, and extra pampering to make their stay truly special.</p>
-    </div>
-    <div class="service-card">
-        <img src="images/ghost-castle.png" alt="Legendary Service">
-        <h2>Legendary Service (VVIP)<br>$70/day</h2>
-        <p>Experience ultimate luxury with our Legendary Service for your ghost Pokemon. Enjoy VVIP treatment, deluxe accommodations, and tailored experiences meeting their every need and desire.</p>
-    </div>
-</div>
-
-<div class="container-fluid mt-5 contact-section">
-    <div class="row">
-        <div class="col">
-            <h2>Contact Us</h2>
-            <div class = "contact-info"><strong>Address:</strong> 75 Laurier Ave E, Ottawa, ON K1N 6N5</div>
-            <div class = "contact-info"><strong>Phone Number:</strong> (613) 562-5700</div>
-            <div><strong>Opening Hours:</strong></div>
-            <table>
-                <tr>
-                    <td>Weekdays:</td>
-                    <td>7:00am - 10:00pm</td>
-                </tr>
-                <tr>
-                    <td>Weekends:</td>
-                    <td>9:00am - 8:00pm</td>
-                </tr>
-            </table>
+            <p>Our Regular Service offers comprehensive care and attention for your ghost Pokemon, ensuring they feel comfortable and happy during their stay with us.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/ghost-house.jpg" alt="Shiny Service">
+            <h2>Shiny Service (VIP)<br>$40/day</h2>
+            <p>Elevate your ghost Pokemon's experience with our Shiny Service, offering VIP treatment with exclusive perks, personalized attention, and extra pampering to make their stay truly special.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/ghost-castle.png" alt="Legendary Service">
+            <h2>Legendary Service (VVIP)<br>$70/day</h2>
+            <p>Experience ultimate luxury with our Legendary Service for your ghost Pokemon. Enjoy VVIP treatment, deluxe accommodations, and tailored experiences meeting their every need and desire.</p>
         </div>
     </div>
-    <div id = "contact-start"></div>
-</div>
 
-
-
-
+    <div class="container-fluid mt-5 contact-section">
+        <div class="row">
+            <div class="col">
+                <h2>Contact Us</h2>
+                <div class = "contact-info"><strong>Address:</strong> 75 Laurier Ave E, Ottawa, ON K1N 6N5</div>
+                <div class = "contact-info"><strong>Phone Number:</strong> (613) 562-5700</div>
+                <div><strong>Opening Hours:</strong></div>
+                <table>
+                    <tr>
+                        <td>Weekdays:</td>
+                        <td>7:00am - 10:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Weekends:</td>
+                        <td>9:00am - 8:00pm</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id = "contact-start"></div>
+    </div>
 </body>
-
 </html>
