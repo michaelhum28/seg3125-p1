@@ -9,7 +9,6 @@
   padding-bottom: 0;
 }
 
-
 .title {
   padding-left: 100px;
 }
@@ -93,7 +92,7 @@ button[type="submit"] {
   background-color: #00bfff;
 }
 
-.loyalty-title{
+.loyalty-title {
   padding: 0.5rem 0;
 }
 
@@ -102,7 +101,6 @@ button[type="submit"] {
   justify-content: space-around;
   width: 98%;
   max-width: 1420px;
-  
 }
 
 .service-card {
@@ -114,6 +112,11 @@ button[type="submit"] {
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
+  transition: transform 0.3s ease; /* Add this line */
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Add this line */
 }
 
 .service-card img {
@@ -137,7 +140,7 @@ button[type="submit"] {
   margin-top: 10px;
 }
 
-.loyalty-container{
+.loyalty-container {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -150,11 +153,11 @@ button[type="submit"] {
   color: white;
 }
 
-.contact-info{
+.contact-info {
   margin-bottom: 4px;
 }
 
-.services-title{
+.services-title {
   margin-top: 30px;
   padding: 0 16rem;
 }
@@ -162,10 +165,10 @@ button[type="submit"] {
 .booking-confirmation {
   background-color: #4B2E83;
   color: white;
-    padding: 50px;
-    text-align: center;
-    border-radius: 15px;
-    font-family: 'Arial', sans-serif;
+  padding: 50px;
+  text-align: center;
+  border-radius: 15px;
+  font-family: 'Arial', sans-serif;
 }
 
 .booking-confirmation h1 {
@@ -176,9 +179,9 @@ button[type="submit"] {
 .booking-confirmation p {
   font-size: 18px;
   margin-top: 12px;
-  padding-top:10px;
+  padding-top: 10px;
 }
 
-.booking-confirmation-container{
+.booking-confirmation-container {
   background-color: #4B2E83;
 }
